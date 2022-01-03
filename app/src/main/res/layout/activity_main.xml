@@ -6,19 +6,46 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:orientation="vertical"
-    android:gravity="center"
     android:padding="15dp">
 
-<!--    <TextView-->
-<!--        android:id="@+id/pokemonCount"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:text="0/150 Pokemon"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintLeft_toLeftOf="parent"-->
-<!--        app:layout_constraintRight_toRightOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent"-->
-<!--        />-->
+    <TextView
+        android:id="@+id/countdownTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/pokemonCaughtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pokemon Caught"
+        android:layout_gravity="center"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/pokemonCaughtList"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+         />
+
+
+
+    <TextView
+        android:id="@+id/pokemonCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0/150 Pokemon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="175dp"
+        />
+
 
 
 
@@ -26,12 +53,14 @@
         android:id="@+id/pokemonCaught"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Pokemon Caught"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_gravity="center"
+
+
         />
 
 <!--    <LinearLayout-->
@@ -65,22 +94,27 @@
 <!--&lt;!&ndash;            />&ndash;&gt;-->
 
 <!--    </LinearLayout>-->
+    
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:layout_marginTop="35dp">
+        android:layout_marginTop="8dp"
+        android:layout_gravity="center"
+        >
 
         <androidx.appcompat.widget.AppCompatEditText
             android:id="@+id/pokemonInputName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="8dp"
             android:hint="Pokemon Name"
             android:inputType="textCapWords"
             android:textColor="#363a43"
             android:textColorHint="#7a8089"
+            android:layout_gravity="center"
+
             />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -89,10 +123,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Catch"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="8dp"
+            android:layout_gravity="center"
+
             />
-
-
-
 
 </LinearLayout>
